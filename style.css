@@ -1,5 +1,5 @@
 body {
-    background-color: ;
+    background-color: #fefae0;
     
 }
 .fooldal_box {
@@ -13,6 +13,7 @@ body {
     background-color: ;
 }
 .card {
+    background-color: #faedcd;
     width: 100%;
     align-items: center;
     align-content: center;
