@@ -16,7 +16,7 @@ Ez a projekt egy egyszerű kávé webshop, amelyet HTML, CSS és JavaScript seg�
 
 ## Telepítés
 
-1.  Klónozd a repót: `git clone [repo URL]`
+1.  Klónozd a repót: `git clone https://github.com/KKrhunter/Szemes-K-v--Webshop.git`
 2.  Nyisd meg az `index.html` fájlt a böngésződben.
 
 ## Használat
