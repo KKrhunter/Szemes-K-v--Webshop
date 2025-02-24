@@ -9,102 +9,194 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
             integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="script.js">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        
+
     </head>
+
 <body>
+  <link rel="stylesheet" href="script.js">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">Cégnév+Logo</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="index.html"><b style="font-size: 22px; margin-left: 50px;"> Kávé kuckó </b><img class="Logo" src="Logo.png" alt=""></a>
+        
      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#" style="font-size: 20px; font-weight: bold;">Főoldal</a>
+              <a class="nav-link" href="#" style="font-size: 20px; font-weight: bold;"></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="szemeskavek.html" style="font-size: 20px; font-weight: bold;">Szemeskávéink</a>
+                <a class="nav-link" href="szemeskavek.html" style="font-size: 20px; font-weight: bold;"></a>
             </li>
           </ul>
-          <div class="codepen-button"><span class="span"><p class="p">Kosár</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="1em"
-              viewBox="0 0 576 512"
-              fill="#000"
-              class="cart"
-            >
-              <path
-                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg></span></div>
-        </div>
+          <button id="myBtn" class="buy-now">Kosár<img src="kosar.png" alt="" style="width: 40px;"> </button><span style="margin-top: 30px; margin-left: -10px; color: white; font-size: 18px;" id="kosarszam"><b> 0</b></span>
       </nav>
+      <br><br><br><br>
       <center>
         <div class="nagy_oldal_box">
         <div class="fooldal_box">
-          <h1>Lorem ipsum dolor sit.</h1>
-          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut doloremque magnam dolores ducimus, quis reprehenderit soluta deserunt necessitatibus error, illum vero? Ab, natus. Quia iste et enim, nesciunt sunt rerum.</p>
+          <h1 style="text-shadow: 1px 1px black;">Köszöntjük kedves vevőnket a kávé kukcónál</h1>
+          <h2 style="text-shadow: 1px 1px black;">A kiváló minőlségű prémium szemes kávé eladásával foglalkozunk</h2>
+          <p style="text-shadow: 1px 1px black;">Fedezze fel a világ legfinomabb kávébabjait, frissen pörkölve, egyenesen az Ön csészéjébe. Minőségi kávék, gyors szállítás, elégedett vásárlók. Kóstolja meg a különbséget!</p>
         </div>
       </div>
         <div style="margin: 50px;">
-          <h1>Felkapott termékeink</h1>
+          <h1>Kávé fajtáink</h1>
         </div>
       </center>
-
-
+      <center>
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <div class="card">
-              <div>
-                <img src="" alt="">
+            <div class="card" style="height: 600px; width: 325px;">
+              <div class="card-img"><img class="card-image" src="kave1.webp" alt=""></div>
+              <div class="card-title">Arpalice Cremoso szemes kávé (1kg)</div>
+              <div class="card-subtitle">A megszokott klaszikus izzel biró prémium kávé.</div>
+              <hr class="card-divider">
+              <div class="card-footer">
+                  <div class="card-price">6399<span>Ft</span></div>
+                  <button class="card-btn" onclick="k1()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                  </button>
               </div>
-              <div>
-                <h1>
-                  Kávéfajta 1
-                </h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa unde et praesentium doloribus quibusdam?
-                </p>
-                <button class="card-button">Több információ</button>
-              </div>
-            </div>
+          </div>
           </div>
           <div class="col-md-4">
-            <div class="card">
-              <div>
-                <img src="" alt="">
+            <div class="card" style="height: 600px; width: 325px;">
+              <div class="card-img"><img class="card-image" src="kave2.webp" alt=""></div>
+              <div class="card-title">Dallmayr Crema d’Oro szemes kávé (1kg)</div>
+              <div class="card-subtitle">Egy aromás kávékülönlegesség, telt ízzel rendelkezik és alacsony a savtartalma.</div>
+              <hr class="card-divider">
+              <div class="card-footer">
+                  <div class="card-price">6000<span>Ft</span></div>
+                  <button class="card-btn" onclick="k2()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                  </button>
               </div>
-              <div>
-                <h1>
-                  Kávéfajta 2
-                </h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa unde et praesentium doloribus quibusdam?
-                </p>
-                <button class="card-button">Több információ</button>
-              </div>
-            </div>
+          </div>
           </div>
           <div class="col-md-4">
-            <div class="card">
-              <div>
-                <img src="" alt="">
+            <div class="card" style="height: 600px; width: 325px;">
+              <div class="card-img"><img class="card-image" src="kave3.webp" alt=""></div>
+              <div class="card-title">Dallmayr Crema d’Oro Brasil szemes kávé (1kg)</div>
+              <div class="card-subtitle">A kávé teljes testességével, mogyorós és enyhén csokoládés jegyeivel.</div>
+              <hr class="card-divider">
+              <div class="card-footer">
+                  <div class="card-price">6299<span>Ft</span></div>
+                  <button class="card-btn" onclick="k3()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                  </button>
               </div>
-              <div>
-                <h1>
-                  Kávéfajta 3
-                </h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa unde et praesentium doloribus quibusdam?
-                </p>
-                <button class="card-button">Több információ</button>
+          </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="height: 600px; width: 325px;">
+              <div class="card-img"><img class="card-image" src="kave4.webp" alt=""></div>
+              <div class="card-title">Arpalice Cremoso szemes kávé (1kg)</div>
+              <div class="card-subtitle">Az olasz kávéművészet az ország határain túl is ismert, és egyike Olaszország számos varázsának.</div>
+              <hr class="card-divider">
+              <div class="card-footer">
+                  <div class="card-price">6599<span>Ft</span></div>
+                  <button class="card-btn" onclick="k4()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                  </button>
               </div>
-            </div>
+          </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="height: 600px; width: 325px;">
+              <div class="card-img"><img class="card-image" src="kave5.webp" alt=""></div>
+              <div class="card-title">Dallmayr Crema d’Oro szemes kávé (1kg)</div>
+              <div class="card-subtitle">Kompromisszumot nem ismerően erős, aromával teli, tüzes világú és bársonyos crema jellemzi.</div>
+              <hr class="card-divider">
+              <div class="card-footer">
+                  <div class="card-price">5999<span>Ft</span></div>
+                  <button class="card-btn" onclick="k5()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                  </button>
+              </div>
+          </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="height: 600px; width: 325px;">
+              <div class="card-img"><img class="card-image" src="kave6.jpg" alt=""></div>
+              <div class="card-title">Dallmayr Crema d’Oro Brasil szemes kávé (1kg)</div>
+              <div class="card-subtitle">Élénk, testes, igazi olasz, íz élmény. Testes és kiegyensúlyozott aroma, az igazi olasz eszpresszó intenzitásával.</div>
+              <hr class="card-divider">
+              <div class="card-footer">
+                  <div class="card-price">6899<span>Ft</span></div>
+                  <button class="card-btn" onclick="k6()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                  </button>
+              </div>
+          </div>
           </div>
         </div>
       </div>
-      <div></div>
+    </center>
+
+
+    
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <center><h2><b>Kosár</b></h2></center>
+            <div class="container">
+              <div class="row">
+                  <div class="col-md-7">
+                    <h4><b>Kosárba lévő termékek:</b></h4>
+                      <div id="kave1">
+                        <img src="kave1.webp" alt="" class="icon_kep"><label for="">Ár: </label><b>6399</b> Ft * <input onchange="osszar()" type="number" style="width: 50px;" value="0" min="0" id="kave1_db"> db = (<input style="width: 70px;" type="number" readonly min="0" id="resz_ar1">Ft)<br>
+                      </div>
+                      <div id="kave2">
+                        <img src="kave2.webp" alt="" class="icon_kep"><label for="">Ár: </label><b>6000</b> Ft * <input onchange="osszar()" type="number" style="width: 50px;" value="0" min="0" id="kave2_db"> db = (<input style="width: 70px;" type="number" readonly min="0" id="resz_ar2">Ft)<br>
+                      </div>
+                      <div id="kave3">
+                        <img src="kave3.webp" alt="" class="icon_kep"><label for="">Ár: </label><b>6299</b> Ft * <input onchange="osszar()" type="number" style="width: 50px;" value="0" min="0" id="kave3_db"> db = (<input style="width: 70px;" type="number" readonly min="0" id="resz_ar3">Ft)<br>
+                      </div>
+                      <div id="kave4">
+                        <img src="kave4.webp" alt="" class="icon_kep"><label for="">Ár: </label><b>6599</b> Ft * <input onchange="osszar()" type="number" style="width: 50px;" value="0" min="0" id="kave4_db"> db = (<input style="width: 70px;" type="number" readonly min="0" id="resz_ar4">Ft)<br>
+                      </div>
+                      <div id="kave5">
+                        <img src="kave5.webp" alt="" class="icon_kep"><label for="">Ár: </label><b>5999</b> Ft * <input onchange="osszar()" type="number" style="width: 50px;" value="0" min="0" id="kave5_db"> db = (<input style="width: 70px;" type="number" readonly min="0" id="resz_ar5">Ft)<br>
+                      </div>
+                      <div id="kave6">
+                        <img src="kave6.jpg" alt="" class="icon_kep"><label for="">Ár: </label><b>6899</b> Ft * <input onchange="osszar()" type="number" style="width: 50px;" value="0" min="0" id="kave6_db"> db = (<input style="width: 70px;" type="number" readonly min="0" id="resz_ar6">Ft)<br>
+                      </div>
+                  </div>
+                <div class="col-md-4">
+                  <div class="fizetes">
+                    <form action="">
+                      <Label>Név</Label><br>
+                      <input type="text" id="nev"><br>
+                      <label for="">E-mail cím</label> <br>
+                      <input type="text" id="email"><br>
+                      <label for="">Fizetendő összeg</label> <br>
+                      <input type="number" id="ossz" readonly><br>
+                      <br>
+                      <center>
+                      <button class="Btn" onclick="fizetes()">
+                        Fizetés
+                        <svg class="svgIcon" viewBox="0 0 576 512"><path d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"></path></svg>
+                      </button></center>
+                  </div>
+                  </form>
+                </div>
+            </div>
+            </div>
+        </div>
+      
+    </div>
+
+    <script src="script.js"></script>
+      <br><br>
+
+      
 </body>
 </html>
