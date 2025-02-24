@@ -1,4 +1,4 @@
-# Kávé Webshop
+# Kávébab Webshop
 
 Ez a projekt egy egyszerű kávé webshop, amelyet HTML, CSS és JavaScript segítségével készítettem.
 
