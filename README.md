@@ -24,9 +24,3 @@ Ez a projekt egy egyszerű kávé webshop, amelyet HTML, CSS és JavaScript seg�
 * A főoldalon megtekintheted a termékek listáját.
 * A "Kosár" gombbal hozzáadhatod a terméket a kosárhoz.
 * A kosár oldalon megtekintheted a kosár tartalmát, és leadhatod a rendelést.
-
-## Képernyőképek (opcionális)
-
-
-
-#Drótváz
